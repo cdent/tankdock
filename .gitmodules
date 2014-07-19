@@ -1,3 +1,6 @@
 [submodule "tank"]
 	path = tank
 	url = git://github.com/cdent/tank.git
+[submodule "tiddlywebplugins.oauth"]
+	path = tiddlywebplugins.oauth
+	url = git://github.com/cdent/tiddlywebplugins.oauth.git
