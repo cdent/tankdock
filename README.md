@@ -1,7 +1,8 @@
 # What
 
-TankDock is [Tank](https://tank.peermore.com/) in Docker so that
-people can run their own Tank service.
+TankDock is [Tank](https://tank.peermore.com/) in
+[Docker](https://docker.com/) so that people can run their own Tank
+service.
 
 # Status
 
