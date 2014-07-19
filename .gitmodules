@@ -1,0 +1,3 @@
+[submodule "tank"]
+	path = tank
+	url = git://github.com/cdent/tank.git
