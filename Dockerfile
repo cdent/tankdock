@@ -40,7 +40,8 @@ ADD tiddlywebplugins.oauth /home/tiddlyweb/tiddlywebplugins.oauth
 ADD tank/tiddlywebplugins /home/tiddlyweb/tank/tiddlywebplugins
 RUN cd /home/tiddlyweb/tank/tiddlywebplugins && ln -s ../../tiddlywebplugins.oauth/tiddlywebplugins/oauth .
 RUN cd /home/tiddlyweb/tank && ln -s tiddlywebplugins/templates .
-ADD tiddlywebconfig.py /home/tiddlyweb/tank/
 
 RUN chown -R tiddlyweb:tiddlyweb /home/tiddlyweb
 RUN chmod 755 /home/tiddlyweb /home/tiddlyweb/tank
+
+ONBUILD ADD tiddlywebconfig.py /home/tiddlyweb/tank/
