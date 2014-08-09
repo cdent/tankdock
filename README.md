@@ -96,7 +96,7 @@ sudo docker build -t cdent/tank .
 If you used a different name building the base container, change the
 "FROM" line in the Dockerfile.
 
-Now you a Tank you can run.
+Now you have a Tank you can run.
 
 # Run
 
