@@ -51,6 +51,15 @@ This repo is divided into several parts:
 
 # Making Your Own
 
+First, clone the repo, cd into it and:
+
+```
+git submodule init
+git submodule update
+```
+
+then:
+
 Currently, building a container with a custom Tank in it is a two
 step process. If you are not familiar with Docker, [the
 docs](http://docs.docker.com/) are good.
