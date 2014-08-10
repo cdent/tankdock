@@ -2,7 +2,7 @@ import mangler
 import urlparse
 
 # Adjust these config settings for use in config below
-# Base URL of the server with scheme, host and part
+# Base URL of the server with scheme, host and optional port
 # e.g "https://tank.peermore.com/"
 base_url = ''
 
@@ -45,6 +45,8 @@ oauth_servers = {}
 
 if github_id and github_secret:
     oauth_servers['github'] = {
+        'pretty_name': 'GitHub',
+        'icon': 'fa-github',
         'client_id': github_id,
         'client_secret': github_secret,
         'scope': [],
@@ -62,6 +64,8 @@ if github_id and github_secret:
 
 if google_id and google_secret:
     oauth_servers['google'] = {
+        'pretty_name': 'Google',
+        'icon': 'fa-google-plus',
         'client_id': google_id,
         'client_secret': google_secret,
         'scope': ['openid', 'email'],
@@ -77,6 +81,8 @@ if google_id and google_secret:
 
 if facebook_id and facebook_secret:
     oauth_severs['facebook'] = {
+        'pretty_name': 'Facebook',
+        'icon': 'fa-facebook',
         'client_id': facebook_id,
         'client_secret': facebook_secret,
         'scope': ['email'],

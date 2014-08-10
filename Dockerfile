@@ -38,8 +38,8 @@ ADD tank/mangler.py /home/tiddlyweb/tank/
 ADD tank/src /home/tiddlyweb/tank/src
 ADD tiddlywebplugins.oauth /home/tiddlyweb/tiddlywebplugins.oauth
 ADD tank/tiddlywebplugins /home/tiddlyweb/tank/tiddlywebplugins
-RUN cd /home/tiddlyweb/tank/tiddlywebplugins && ln -s ../../tiddlywebplugins.oauth/tiddlywebplugins/oauth .
-RUN cd /home/tiddlyweb/tank && ln -s tiddlywebplugins/templates .
+RUN cd /home/tiddlyweb/tank/tiddlywebplugins && ln -sf ../../tiddlywebplugins.oauth/tiddlywebplugins/oauth .
+RUN cd /home/tiddlyweb/tank && ln -sf tiddlywebplugins/templates .
 
 RUN chown -R tiddlyweb:tiddlyweb /home/tiddlyweb
 RUN chmod 755 /home/tiddlyweb /home/tiddlyweb/tank
