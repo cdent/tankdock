@@ -14,9 +14,7 @@ Please note that at this time there are a few issues which make this
 not ready for prime time (see Todo below as well):
 
 * Your content is not stored in persistent storage. When you shut
-  down your container, your content is gone.
-* Font-awesome icons are not working, making it rather hard to
-  navigate.
+  down your container, your content is **gone**.
 * SSL should be used whenever oauth2 is being used.
 
 # Status
@@ -130,7 +128,6 @@ Tank.
 # Todo
 
 * Mount local disk for tiddler storage and logging.
-* Font-Awesome fonts not yet working.
 * SSL. We must have it if oauth is being used.
 * Making S3 storage for binaries optional.
 * Getting twsock in the mix for websocket notifications.
